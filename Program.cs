@@ -91,14 +91,18 @@ int count = 0;
 
 foreach (int summ1 in sum2)
 {
-    Console.WriteLine(summ1);
     totalsum += summ1;
-    if (sum2 > 500)
+    if (summ1 > 500)
     {
-       Console.WriteLine(sum2);
     count++; 
     }
 
 }
 Console.WriteLine($"Накопление суммы: {totalsum}");
 Console.WriteLine($"Дороже 500: {count}");
+
+Console.WriteLine("Вариант 8");
+string word = "Программирование";
+for (int a = word.Length - 1; a >= 0; a--){
+    Console.WriteLine(word[a]);
+}
